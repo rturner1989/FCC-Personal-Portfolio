@@ -1,0 +1,247 @@
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    font-family: 'Teko', sans-serif;
+}
+body {
+    margin: 0;
+}
+#header {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 5px 5px 10px black;
+    font-size: 1.9rem;
+    background-color: white;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+#nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.navbar-link {
+    display: block;
+    padding: 1.8rem;
+    color: #7510F7;
+    text-decoration: none;
+}
+.navbar-link:hover {
+    background-color: #7510F7;
+    color: white;
+}
+/* main content */
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+@media (max-width: 775px) {
+    #welcome-section {
+        display: flex;
+        text-align: center;
+        max-width: 100%;
+    }
+}
+#welcome-section h1 {
+    font-size: 3rem;
+}
+#welcome-section p {
+    font-size: 2rem;
+}
+#animation {
+    background: linear-gradient(to right, #7510F7, white, #7510F7);
+    background-clip: text;
+    color: transparent;
+    animation: animation 6s ease-out infinite;
+    background-size: 400% 100%;
+}
+@keyframes animation {
+    0%, 40% {
+        background-position: 0 0;
+    }
+    20% {
+        background-position: 100% 0;
+    }
+}
+/* Project Links */
+#projects {
+    text-align: center;
+    background: linear-gradient(180deg, transparent 35%, #7510F7 20%, #7510F7 100%);
+    padding: 20px;
+}
+#projects div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+    justify-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+}
+#projects a {
+    text-decoration: none;
+    color: #7510F7;
+}
+#project1 {
+    border: black solid 1px;
+    max-width: 500px;
+    padding: 5px;
+    background-color: white;
+}
+#project1 h3 {
+    margin-top:0;
+    margin-bottom: 0;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+}
+#project1:hover {
+    transition: all 0.3s;
+    color: white;
+    background-color: #DF367C;
+    scale: 1.1;
+    box-shadow: #161925 5px 5px 5px;
+}
+#project2 {
+    border: black solid 1px;
+    max-width: 500px;
+    padding: 5px;
+    background-color: white;
+}
+#project2 h3 {
+    margin-top:0;
+    margin-bottom: 0;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+}
+#project2:hover {
+    transition: all 0.3s;
+    color: white;
+    background-color: #DF367C;
+    scale: 1.1;
+    box-shadow: #161925 5px 5px 5px;
+}
+#project3 {
+    border: black solid 1px;
+    max-width: 500px;
+    padding: 5px;
+    background-color: white;
+}
+#project3 h3 {
+    margin-top:0;
+    margin-bottom: 0;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+}
+#project3:hover {
+    transition: all 0.3s;
+    color: white;
+    background-color: #DF367C;
+    scale: 1.1;
+    box-shadow: #161925 5px 5px 5px;
+}
+#project4 {
+    border: black solid 1px;
+    max-width: 500px;
+    padding: 5px;
+    background-color: white;
+}
+#project4 h3 {
+    margin-top:0;
+    margin-bottom: 0;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+}
+#project4:hover {
+    transition: all 0.3s;
+    color: white;
+    background-color: #DF367C;
+    scale: 1.1;
+    box-shadow: #161925 5px 5px 5px;
+}
+@media (min-width:775px max-width:1140px) {
+    #projects div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+@media (max-width: 774px) {
+    #projects div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+}
+/* image sizing */
+.project-tile {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+}
+/* profile contacts */
+#profile-section {
+    max-height: 30vh;
+    height: 100%;
+    text-align: center;
+    background-color: #47059E;
+    padding-bottom: 20px;
+}
+@media (max-width: 774px) {
+    #profile-section {
+        padding-bottom: 40px;
+    }
+}
+#contact {
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    width: 50%;
+    margin-left: auto;  
+    margin-right: auto;
+    text-align: center;
+}
+#contact h3 {
+    font-size: 2rem;
+    color: white;
+}
+#submit {
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*footer */
+#footer {
+    height: 10vh;
+    margin: 0;
+    background-color: #120128;
+    text-align: center;
+}
+#navbar2 {
+    padding-top: 20px;
+}
+#navbar2 img {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
