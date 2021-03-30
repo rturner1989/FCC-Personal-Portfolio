@@ -3,6 +3,9 @@ html {
 }
 :root {
     font-family: 'Teko', sans-serif;
+    /* color variables */
+    --text-color: #7510F7;
+
 }
 body {
     margin: 0;
@@ -33,7 +36,7 @@ body {
 .navbar-link {
     display: block;
     padding: 1.8rem;
-    color: #7510F7;
+    color: var(--text-color);
     text-decoration: none;
 }
 .navbar-link:hover {
@@ -62,7 +65,7 @@ body {
     font-size: 2rem;
 }
 #animation {
-    background: linear-gradient(to right, #7510F7, white, #7510F7);
+    background: linear-gradient(to right, var(--text-color), white, var(--text-color));
     background-clip: text;
     color: transparent;
     animation: animation 6s ease-out infinite;
@@ -97,7 +100,7 @@ body {
 }
 #projects a {
     text-decoration: none;
-    color: #7510F7;
+    color: var(--text-color);
 }
 #project1 {
     border: black solid 1px;
